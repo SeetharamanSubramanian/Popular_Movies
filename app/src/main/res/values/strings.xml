@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="TMDB_image_base_url">http://image.tmdb.org/t/p/</string>
+    <string name="plot_title">Plot Synopsis</string>
+    <string name="release_date">Release Date:</string>
+    <string name="rating">Rating:</string>
+    <string name="plot_synopsis">Plot Synopsis:</string>
+    <string name="pref_filter_label">Sort by</string>
+    <string name="pref_filter_key">filter</string>
+    <string name="pref_filter_default">popular</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings Activity</string>
+    <string name="error_internet">No internet connection detected, please re-connect and try again</string>
+    <string name="msg_error_internet">This app requires an internet connection to work, connect to Internet now?</string>
+    <string name="dialog_error_internet_title">No Internet Detected</string>
+
+</resources>
