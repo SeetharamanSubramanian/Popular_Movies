@@ -7,4 +7,10 @@
     <dimen name="padding_main">8dp</dimen>
     <dimen name="margin_separation">8dp</dimen>
     <dimen name="text_body">14sp</dimen>
+    <dimen name="grid_vertical_spacing">16dp</dimen>
+    <dimen name="grid_horizontal_spacing">8dp</dimen>
+    <dimen name="fab_margin">24dp</dimen>
+    <dimen name="dimen_review_size">160dp</dimen>
+    <dimen name="dimen_toolbar_image_height">264dp</dimen>
+
 </resources>

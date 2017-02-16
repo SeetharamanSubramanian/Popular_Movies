@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColor">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:layout_weight="3">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_toolbar_image_height"
+            android:id="@+id/iv_main"
+            android:scaleType="centerCrop"
+            android:background="@null"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_main"
+            android:background="#80000000"
+            android:padding="@dimen/padding_main"
+            android:textSize="@dimen/dimen_title_text_size"
+            android:textColor="@color/white"
+            android:id="@+id/tv_title"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_favourite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_anchor="@id/iv_main"
+            app:layout_anchorGravity="bottom|end"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/iv_main"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_release_date"
+            android:text="@string/release_date"
+            android:textSize="@dimen/dimen_heading_text_size"
+            android:layout_below="@id/tv_title"
+            android:padding="@dimen/padding_main"
+            android:layout_marginTop="@dimen/margin_separation"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_release_date"
+            android:layout_toEndOf="@id/tv_release_date"
+            android:padding="8dp"
+            android:textSize="@dimen/dimen_heading_text_size"
+            android:textColor="@color/white"
+            android:id="@+id/tv_release_date_text"
+            android:layout_toRightOf="@id/tv_release_date" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_release_date"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_separation"
+            android:background="@null"
+            android:id="@+id/ll_rating"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_rating"
+                android:text="@string/rating"
+                android:textSize="@dimen/dimen_heading_text_size"
+                android:textColor="@color/white"
+                android:padding="@dimen/padding_main"
+                />
+            <android.support.v7.widget.AppCompatRatingBar
+                style="@style/Base.Widget.AppCompat.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:id="@+id/ratingBar"
+                android:isIndicator="true"
+                />
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lv_trailers"
+            android:layout_below="@id/ll_rating"
+            android:layout_marginBottom="@dimen/margin_separation"
+            android:paddingLeft="@dimen/padding_main"
+            android:paddingRight="@dimen/padding_main"
+            android:divider="@color/divider"
+            android:dividerHeight="1dp"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_heading_text_size"
+            android:text="@string/plot_synopsis"
+            android:padding="@dimen/padding_main"
+            android:id="@+id/tv_plot_synopsis"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_body"
+            android:paddingLeft="@dimen/padding_main"
+            android:paddingRight="@dimen/padding_main"
+            android:id="@+id/tv_plot_synopsis_text"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_heading_text_size"
+            android:layout_marginTop="@dimen/margin_separation"
+            android:text="@string/review_text"
+            android:padding="@dimen/padding_main"
+            android:id="@+id/tv_reviews"
+            />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_separation"
+            android:id="@+id/lv_reviews"
+            android:paddingLeft="@dimen/padding_main"
+            android:paddingRight="@dimen/padding_main"
+            android:divider="@color/divider"
+            android:dividerHeight="1dp"
+            android:isScrollContainer="true"
+            android:layout_marginBottom="@dimen/margin_separation"
+            />
+    </LinearLayout>
+</LinearLayout>

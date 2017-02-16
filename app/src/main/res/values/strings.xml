@@ -7,11 +7,21 @@
     <string name="plot_synopsis">Plot Synopsis:</string>
     <string name="pref_filter_label">Sort by</string>
     <string name="pref_filter_key">filter</string>
-    <string name="pref_filter_default">popular</string>
+    <string name="pref_filter_default">0</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_settings">Settings Activity</string>
     <string name="error_internet">No internet connection detected, please re-connect and try again</string>
     <string name="msg_error_internet">This app requires an internet connection to work, connect to Internet now?</string>
     <string name="dialog_error_internet_title">No Internet Detected</string>
+
+    <string name="content_authority">com.example.seetharaman.popularmovies.app</string>
+
+    <!-- SyncAdapter related -->
+    <string name="sync_account_type">sunshine.example.com</string>
+
+    <string name="action_filter">Filter</string>
+    <string name="title_activity_detail">detail_activity</string>
+    <string name="activity_details">Details</string>
+    <string name="review_text">Reviews</string>
 
 </resources>
